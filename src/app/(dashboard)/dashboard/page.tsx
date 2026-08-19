@@ -53,11 +53,11 @@ const DATA = [
     icon: <ClockFading />,
     children: (
       <div className="mt-8">
-        <h3 className="mb-1 text-[#39FF14] text-4xl font-bold">142 Games</h3>
+        <h3 className="mb-1 text-brightGreen text-4xl font-bold">142 Games</h3>
         <div className="flex items-center">
-          <MoveUp className="text-[#FFB4AB]" />
-          <span className="text-[#FFB4AB] mr-1"> 4</span>
-          <span className="text-[#BACCB0]">Since last sync</span>
+          <MoveUp className="text-lightPink" />
+          <span className="text-lightPink mr-1"> 4</span>
+          <span className="text-justGreen">Since last sync</span>
         </div>
       </div>
     ),
@@ -69,7 +69,7 @@ const DATA = [
     children: (
       <div className="mt-8">
         <h3 className="mb-1 text-white text-4xl font-bold">2,450 Hours</h3>
-        <span className="text-[#BACCB0]">Estimated based on HLTB</span>
+        <span className="text-justGreen">Estimated based on HLTB</span>
       </div>
     ),
   },
@@ -100,12 +100,12 @@ const MAIN_DATA = [
         <div className="flex flex-col justify-center items-center">
           <Dice6 size={96} color="#39FF14" className="mb-10" />
           <h2 className="text-3xl font-bold mb-2">SMART ROULETTE WHEEL</h2>
-          <span className="text-[#BACCB0] text-sm mb-6">
+          <span className="text-justGreen text-sm mb-6">
             Algorithmically selecting your next obsession based on playstyle,
             mood, and backlog urgency.
           </span>
           <button
-            className="bg-[#39FF14] px-12 py-4 text-[#053900] font-bold rounded"
+            className="bg-brightGreen px-12 py-4 text-darkGreen font-bold rounded"
             type="button"
           >
             ROLL FOR THE NEXT GAME
@@ -122,7 +122,7 @@ const MAIN_DATA = [
         <div className="border-[#3C4B35] border bg-[#252525] relative mb-4">
           <Search
             size={30}
-            className="text-[#BACCB0] absolute top-1/2 left-3 -translate-y-1/2"
+            className="text-justGreen absolute top-1/2 left-3 -translate-y-1/2"
           />
           <input
             className="py-4 pr-3.5 pl-14 text-xl w-full"
@@ -158,8 +158,8 @@ const OTHER_DATA = [
         <div className="mb-2">
           <LinearProgress percentage={70} />
           <div className="mt-2 flex justify-between">
-            <span className="text-[#BACCB0] text-xs">8 Games</span>
-            <span className="text-[#BACCB0] text-xs">This month</span>
+            <span className="text-justGreen text-xs">8 Games</span>
+            <span className="text-justGreen text-xs">This month</span>
           </div>
         </div>
       </div>
@@ -170,8 +170,8 @@ const OTHER_DATA = [
     title: "SYNC STATUS",
     children: (
       <div className="mt-4 flex items-center">
-        <span className="w-2.5 h-2.5 rounded-full bg-[#39FF14] inline-block mr-2"></span>
-        <span className="text-[#BACCB0] text-xs">Cloud Active</span>
+        <span className="w-2.5 h-2.5 rounded-full bg-brightGreen inline-block mr-2"></span>
+        <span className="text-justGreen text-xs">Cloud Active</span>
       </div>
     ),
   },
@@ -184,7 +184,7 @@ const OTHER_DATA = [
         <div className="mt-2">
           <button
             type="button"
-            className="text-[#EFFFE3] font-bold border-[#EFFFE3]/25 border px-2 py-1"
+            className="text-lightGreen font-bold border-lightGreen/25 border px-2 py-1"
           >
             RE-INDEX
           </button>

@@ -27,10 +27,10 @@ export default function Data() {
     <div className="flex mt-12 divide-x divide-gray-300 justify-center">
       {DATA.map((data) => (
         <div className="flex flex-col items-center px-4 flex-1" key={data.id}>
-          <span className="mb-1 text-[#BACCB0] font-bold text-[10px]">
+          <span className="mb-1 text-justGreen font-bold text-[10px]">
             {data.title.toUpperCase()}
           </span>
-          <span className="text-[#39FF14] font-bold text-xs">
+          <span className="text-brightGreen font-bold text-xs">
             {data.number}
           </span>
         </div>

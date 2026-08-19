@@ -5,10 +5,10 @@ export default function LoginSection({}) {
     <div>
       <div className="border-2 border-[#2D2B3D] rounded-sm">
         <div className="bg-[#131313] p-6">
-          <h3 className="text-xl font-semibold mb-6 text-[#EFFFE3]">
+          <h3 className="text-xl font-semibold mb-6 text-lightGreen">
             Steam Backlog Buster Log In
           </h3>
-          <div className="text-[#BACCB0] mb-2 font-bold text-xs">
+          <div className="text-justGreen mb-2 font-bold text-xs">
             ENTER YOUR STEAMID64
           </div>
           <div className="relative">
@@ -25,21 +25,21 @@ export default function LoginSection({}) {
             <span>Public profile required for library synchronization</span>
           </div>
           <button
-            className="bg-[#39FF14] p-6 mb-6 flex w-full rounded-sm justify-center cursor-pointer"
+            className="bg-brightGreen p-6 mb-6 flex w-full rounded-sm justify-center cursor-pointer"
             type="button"
           >
-            <span className="mr-2 text-[#053900]">
+            <span className="mr-2 text-darkGreen">
               <RefreshCw />
             </span>
-            <span className="text-[#053900] font-bold rounded-sm">
+            <span className="text-darkGreen font-bold rounded-sm">
               SYNC LIBRARY
             </span>
           </button>
           <div className="border-t-2 border-[#3C4B35] pt-6 flex justify-between">
-            <span className="text-[#BACCB0] font-bold text-xs">
+            <span className="text-justGreen font-bold text-xs">
               WHERE IS MY ID?
             </span>
-            <span className="text-[#BACCB0] font-bold text-xs">
+            <span className="text-justGreen font-bold text-xs">
               PRIVACY POLICY
             </span>
           </div>

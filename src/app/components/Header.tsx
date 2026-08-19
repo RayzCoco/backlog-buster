@@ -15,12 +15,12 @@ export default function Header(props: HeaderProps) {
         <Menu />
       </button>
       <div className="flex justify-between flex-1 items-center">
-        <span className="ml-4 font-bold text-[#EFFFE3] text-2xl">
+        <span className="ml-4 font-bold text-lightGreen text-2xl">
           Backlog Buster
         </span>
         <div className="flex divide-x divide-gray-300 items-center">
           <div className="flex flex-col pr-4 mr-4">
-            <span className="text-[#BACCB0]">Welcome back, Nico.</span>
+            <span className="text-justGreen">Welcome back, Nico.</span>
             <p className="text-[#85967C] text-xs">Library Synced: 4 mins ago</p>
           </div>
           <span>account image/link</span>

@@ -34,7 +34,7 @@ export default function GameList({
           </span>
         </div>
         <div>
-          <ExternalLink className="text-[#BACCB0]" size={24} />
+          <ExternalLink className="text-justGreen" size={24} />
         </div>
       </div>
     </Link>
