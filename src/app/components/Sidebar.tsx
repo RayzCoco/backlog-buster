@@ -35,14 +35,14 @@ const LINK_LIST: LinkList[] = [
     link: "/board",
     icon: <Kanban className="mr-2 text-lightGreen" />,
   },
+  // {
+  //   id: 2,
+  //   title: "Deep Analytics",
+  //   link: "/analytics",
+  //   icon: <ChartNoAxesCombined className="mr-2 text-lightGreen" />,
+  // },
   {
     id: 2,
-    title: "Deep Analytics",
-    link: "/analytics",
-    icon: <ChartNoAxesCombined className="mr-2 text-lightGreen" />,
-  },
-  {
-    id: 3,
     title: "Settings",
     link: "/settings",
     icon: <Settings className="mr-2 text-lightGreen" />,
@@ -54,7 +54,7 @@ export default function Sidebar(props: SidebarProps) {
   return (
     <aside
       className={`fixed inset-y-0 left-0 w-64 bg-[#1E1E1E] border-r border-[#3C4B35] py-4 px-2 z-40
-        transition-transform duration-300 ease-in-out h-dvh
+        transition-transform duration-300 ease-in-out
         md:translate-x-0 md:static md:block ${props.isSideBarOpen ? "translate-x-0" : "-translate-x-full"}`}
     >
       <div className="flex items-center justify-between mb-12 px-2">

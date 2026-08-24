@@ -1,10 +1,12 @@
 import { Menu } from "lucide-react";
+import { useHeaderStore } from "../store/useHeaderStore";
 
 interface HeaderProps {
   setIsSidebarOpen: () => void;
 }
 
 export default function Header(props: HeaderProps) {
+  const title = useHeaderStore((state) => state.title);
   return (
     <header className="absolute md:relative top-0 left-0 right-0 h-16 bg-[#1E1E1E] border-b border-slate-800 flex items-center px-4 z-20">
       <button
@@ -15,9 +17,7 @@ export default function Header(props: HeaderProps) {
         <Menu />
       </button>
       <div className="flex justify-between flex-1 items-center">
-        <span className="ml-4 font-bold text-lightGreen text-2xl">
-          Backlog Buster
-        </span>
+        <span className="ml-4 font-bold text-lightGreen text-2xl">{title}</span>
         <div className="flex divide-x divide-gray-300 items-center">
           <div className="flex flex-col pr-4 mr-4">
             <span className="text-justGreen">Welcome back, Nico.</span>

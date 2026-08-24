@@ -10,6 +10,7 @@ import Cards from "@/app/components/Cards";
 import CircularProgress from "@/app/components/CircularProgress";
 import GameList from "@/app/components/GameList";
 import LinearProgress from "@/app/components/LinearProgress";
+import SetHeaderTitle from "@/app/components/SetHeaderTitle";
 
 const GAME_LISTS = [
   {
@@ -127,7 +128,7 @@ const MAIN_DATA = [
           <input
             className="py-4 pr-3.5 pl-14 text-xl w-full"
             type="text"
-            placeholder="Search unplayed titles..."
+            placeholder="Search titles..."
           />
         </div>
         <div className="border-t border-t-[#3C4B35]/20 py-4">
@@ -197,6 +198,7 @@ const OTHER_DATA = [
 export default function Dashboard() {
   return (
     <>
+      <SetHeaderTitle title="Dashboard" />
       <div className="p-6 grid grid-cols-3 gap-4">
         {DATA.map((card) => (
           <Cards key={card.id} title={card.title} icon={card.icon}>
