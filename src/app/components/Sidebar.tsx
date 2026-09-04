@@ -1,7 +1,7 @@
 "use client";
 
 import {
-  ChartNoAxesCombined,
+  // ChartNoAxesCombined,
   Kanban,
   LayoutDashboard,
   Settings,

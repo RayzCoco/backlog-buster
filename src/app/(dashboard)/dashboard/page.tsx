@@ -11,39 +11,60 @@ import CircularProgress from "@/app/components/CircularProgress";
 import GameList from "@/app/components/GameList";
 import LinearProgress from "@/app/components/LinearProgress";
 import SetHeaderTitle from "@/app/components/SetHeaderTitle";
+import type { Game } from "@/app/types/game";
 
-const GAME_LISTS = [
+const GAME_LISTS: Game[] = [
   {
-    id: 0,
+    id: "0",
     title: "Stellar Blade",
-    src: "",
+    steamAppId: 348970,
+    status: "backlog",
+    playtimeHours: 12,
+    estimatedHours: 30,
     genre: "Action",
-    time: 12,
-    url: "",
+    priority: "high",
+    tags: ["single-player", "story"],
+    createdAt: "2026-08-20T10:00:00.000Z",
+    updatedAt: "2026-08-26T12:00:00.000Z",
   },
   {
-    id: 1,
+    id: "1",
     title: "Overwatch",
-    src: "",
-    genre: "Shooter",
-    time: 100,
-    url: "",
+    steamAppId: 348970,
+    status: "playing",
+    playtimeHours: 150,
+    estimatedHours: 30,
+    genre: "Action",
+    priority: "high",
+    tags: ["multi-player", "shooter"],
+    createdAt: "2026-08-20T10:00:00.000Z",
+    updatedAt: "2026-08-26T12:00:00.000Z",
   },
   {
-    id: 2,
-    title: "Pragamata",
-    src: "",
-    genre: "Adventure",
-    time: 20,
-    url: "",
+    id: "2",
+    title: "Pragmata",
+    steamAppId: 348970,
+    status: "backlog",
+    playtimeHours: 150,
+    estimatedHours: 30,
+    genre: "Action",
+    priority: "high",
+    tags: ["adventure", "shooter"],
+    createdAt: "2026-08-20T10:00:00.000Z",
+    updatedAt: "2026-08-26T12:00:00.000Z",
   },
   {
-    id: 3,
-    title: "Slay The Spire 2",
-    src: "",
-    genre: "Card",
-    time: 2,
-    url: "",
+    id: "3",
+    title: "Slay the Spire 2",
+    steamAppId: 348970,
+    status: "completed",
+    playtimeHours: 150,
+    estimatedHours: 30,
+    genre: "Puzzle",
+    priority: "high",
+    tags: ["card"],
+    createdAt: "2026-08-20T10:00:00.000Z",
+    updatedAt: "2026-08-26T12:00:00.000Z",
   },
 ];
 
@@ -137,10 +158,9 @@ const MAIN_DATA = [
               <GameList
                 key={list.id}
                 title={list.title}
-                src={list.src}
-                url={list.url}
+                url={`https://store.steampowered.com/app/${list.steamAppId}`}
                 genre={list.genre}
-                time={list.time}
+                time={list.estimatedHours}
               />
             ))}
           </div>

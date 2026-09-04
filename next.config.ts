@@ -10,6 +10,14 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "avatars.steamstatic.com",
+      },
+      {
+        protocol: "https",
+        hostname: "avatars.akamai.steamstatic.com",
+      },
     ],
   },
 };
